@@ -129,6 +129,13 @@
    function render(){
      const term=input.value.trim().toLocaleLowerCase();
      const dept=department.value;
+     // Keep the directory compact until a visitor searches or chooses a department.
+     if(!term&&!dept){
+       grid.replaceChildren();
+       empty.hidden=true;
+       status.textContent=tests.length?`Search a test or select a department to explore ${tests.length} available tests.`:'No active tests currently listed.';
+       return;
+     }
      const matched=tests.filter(t=>(!dept||String(t.department||'')===dept)&&[t.name,t.code,t.department,t.category,t.sample].some(v=>String(v||'').toLocaleLowerCase().includes(term)));
      const frag=document.createDocumentFragment();
      for(const t of matched){
