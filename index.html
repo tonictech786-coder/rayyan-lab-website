@@ -49,6 +49,48 @@
 #contact .notice{margin-top:19px;background:#eff8fa;border-left-color:#168b9c}
 @media(max-width:850px){#contact .contact{grid-template-columns:1fr}}@media(max-width:590px){#contact .contact-card{padding:21px}#contact .phone-number{font-size:18px}#contact .phone-entry .contact-actions{grid-template-columns:repeat(2,minmax(0,1fr))}#contact .contact-action{font-size:12px;padding:9px 5px}}
 @media(prefers-reduced-motion:reduce){#contact .map-link{transition:none}#contact .map-link:hover{transform:none}}
+
+/* Live test directory: isolated styling; other website sections unchanged. */
+#tests .test{display:flex;flex-direction:column;gap:7px;min-width:0;box-shadow:0 5px 18px #10345c09}
+#tests .test-name{font-size:15px;overflow-wrap:anywhere}
+#tests .test-code{font-size:12px;color:#60778b;font-weight:500}
+#tests .test-price{margin-top:auto;color:#087f77;font-size:19px;font-weight:800}
+#tests .directory-status{color:#526f80;text-align:center;margin:4px 0 20px}
+#tests .directory-note{color:#60778b;text-align:center;font-size:12px;margin:24px auto 0}
+#tests .test-search input:focus-visible{outline:3px solid #14a8a355}
+
+/* RAYYAN LAB premium test directory: scoped, responsive and accessible */
+#tests{background:linear-gradient(180deg,#edf7fc 0%,#f7fbfe 100%)}
+#tests .head{max-width:770px}#tests .head .tag{display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border:1px solid #b9e7e3;border-radius:30px;background:#e2f7f4;color:#087c78;letter-spacing:1.2px}
+#tests .head h2{font-size:clamp(30px,4vw,44px);letter-spacing:-.8px}
+#tests .directory-shell{background:#fff;border:1px solid #dbe9f1;border-radius:25px;padding:clamp(18px,3vw,30px);box-shadow:0 18px 55px #123a5912}
+#tests .directory-toolbar{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:14px;align-items:end;margin-bottom:15px}
+#tests .test-search{max-width:none;margin:0}#tests .test-search label,#tests .directory-filter label{display:block;font-size:13px;font-weight:800;color:#274c65;margin:0 0 8px}
+#tests .search-field{position:relative}#tests .search-field .search-symbol{position:absolute;top:50%;left:16px;transform:translateY(-50%);font-size:20px;color:#118f93;pointer-events:none}
+#tests .test-search input{padding:15px 16px 15px 47px;border:1px solid #c9dce6;border-radius:13px;background:#f9fcfe;min-height:53px}
+#tests .directory-filter select{width:100%;min-height:53px;border:1px solid #c9dce6;border-radius:13px;padding:12px;background:#f9fcfe;color:#16324b;font:inherit;font-weight:600}
+#tests .directory-filter select:focus-visible{outline:3px solid #14a8a355}
+#tests .directory-summary{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid #edf2f6;padding:15px 0 19px}
+#tests .directory-status{text-align:left;margin:0;font-size:13px;font-weight:700}
+#tests .price-legend{font-size:12px;color:#527285;background:#eff8f7;border:1px solid #d1e9e6;border-radius:30px;padding:7px 12px}
+#tests .test-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+#tests .test{position:relative;gap:0;padding:20px;border:1px solid #deebf1;border-radius:17px;background:linear-gradient(150deg,#fff,#fbfdff);box-shadow:0 6px 20px #10345c09;transition:transform .18s,box-shadow .18s,border-color .18s}
+#tests .test:hover{transform:translateY(-3px);border-color:#8bcfcf;box-shadow:0 13px 28px #10345c18}
+#tests .test-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:13px}
+#tests .test-category{font-size:10px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;background:#e7f5f7;color:#176b87;padding:5px 9px;border-radius:7px;max-width:70%;overflow-wrap:anywhere}
+#tests .test-code-badge{font-size:11px;color:#6a8294;font-weight:700;overflow-wrap:anywhere;text-align:right}
+#tests .test-name{font-size:17px;line-height:1.35;font-weight:800;color:#10345c;min-height:46px}
+#tests .test-meta{font-size:12px;font-weight:500;color:#6a8191;line-height:1.5;margin:9px 0 18px;overflow-wrap:anywhere}
+#tests .test-price-row{display:flex;align-items:end;justify-content:space-between;gap:8px;border-top:1px solid #edf1f4;padding-top:13px;margin-top:auto}
+#tests .test-price-label{font-size:11px;font-weight:700;color:#7890a0}
+#tests .test-price{margin:0;color:#087c72;font-size:24px;letter-spacing:-.5px;line-height:1.2;font-weight:900}
+#tests .test-price.unavailable{font-size:13px;letter-spacing:0;color:#9a6c27}
+#tests .test-price .currency{font-size:14px;font-weight:800;letter-spacing:0}
+#tests .directory-note{margin:19px 0 0;line-height:1.6}
+#tests .directory-empty{border:1px dashed #c4dce7;border-radius:14px;background:#f8fcff;padding:30px 18px;margin:8px 0;text-align:center;color:#60778b}
+@media(max-width:850px){#tests .test-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:590px){#tests .directory-toolbar{grid-template-columns:1fr}#tests .test-grid{grid-template-columns:1fr}#tests .test-name{min-height:0}#tests .directory-shell{border-radius:18px}#tests .price-legend{font-size:11px}}
+@media(prefers-reduced-motion:reduce){#tests .test{transition:none}#tests .test:hover{transform:none}}
 </style>
 </head>
 <body>
@@ -58,7 +100,7 @@
 <section class="hero" id="home"><div class="wrap"><div><div class="eyebrow">Welcome to RAYYAN LAB</div><h1>Trusted diagnostics.<br>Clearer answers.</h1><p>Professional laboratory testing services with a focus on careful sample handling, clear reports, and a patient-friendly experience.</p><div class="actions"><a class="btn" href="#tests">Explore Our Tests →</a><a class="btn alt" href="#contact">Visit & Contact Us</a><a class="btn" href="#online-reports">Online Reports →</a></div></div><div class="hero-art" aria-hidden="true"><div class="circle">✚</div><div class="float one">✓ Patient-focused care</div><div class="float two">✦ Diagnostic testing</div></div></div></section>
 <div class="strip"><div class="wrap"><div><b>Convenient Hours</b><span>Monday – Sunday, 10 AM – 10 PM</span></div><div><b>Laboratory Testing</b><span>Routine and specialized investigations</span></div><div><b>Patient Support</b><span>Visit our lab for test information</span></div></div></div>
 <section class="section" id="services"><div class="wrap"><div class="head"><span class="tag">Our services</span><h2>Laboratory services for your health</h2><p>Explore common diagnostic testing categories. Contact the laboratory to confirm test availability and preparation requirements.</p></div><div class="cards"><article class="card"><div class="symbol">🩸</div><h3>Hematology</h3><p>Blood count and related laboratory investigations.</p></article><article class="card"><div class="symbol">🧪</div><h3>Clinical Chemistry</h3><p>Biochemistry testing including liver, kidney and metabolic markers.</p></article><article class="card"><div class="symbol">🔬</div><h3>Hormones & Immunology</h3><p>Thyroid and selected hormonal investigations.</p></article></div></div></section>
-<section class="section soft" id="tests"><div class="wrap"><div class="head"><span class="tag">Test directory</span><h2>Find a common lab test</h2><p>This is an introductory list, not a live test catalog. Prices and availability will be added after verification.</p></div><div class="test-search"><label for="testQuery" style="display:block;font-weight:bold;margin-bottom:8px">Search tests</label><input id="testQuery" type="search" placeholder="Search CBC, HbA1c, TSH…" autocomplete="off"></div><div class="test-grid" id="testGrid"><div class="test" data-name="complete blood count cbc">Complete Blood Count <small>CBC</small></div><div class="test" data-name="liver function test lft">Liver Function Tests <small>LFT</small></div><div class="test" data-name="renal kidney function test rft">Renal Function Tests <small>RFT</small></div><div class="test" data-name="lipid profile cholesterol">Lipid Profile <small>Cholesterol & lipids</small></div><div class="test" data-name="thyroid function test tft tsh">Thyroid Function Tests <small>TFT</small></div><div class="test" data-name="hba1c glycated hemoglobin diabetes">HbA1c <small>Glycated hemoglobin</small></div></div><p class="empty" id="noTests">No matching test in this introductory list. Please contact the lab.</p></div></section>
+<section class="section soft" id="tests"><div class="wrap"><div class="head"><span class="tag">✦ Live Test Directory</span><h2>Explore Tests &amp; Prices</h2><p>Find your laboratory test and view its original price directly from RAYYAN LAB Rate Master. Search by test name, code, department or sample type.</p></div><div class="directory-shell"><div class="directory-toolbar"><div class="test-search"><label for="testQuery">Search laboratory tests</label><div class="search-field"><span class="search-symbol" aria-hidden="true">⌕</span><input id="testQuery" type="search" placeholder="e.g. CBC, HbA1c, TSH, Liver Function" autocomplete="off" aria-controls="testGrid"></div></div><div class="directory-filter"><label for="departmentFilter">Department</label><select id="departmentFilter" aria-controls="testGrid"><option value="">All departments</option></select></div></div><div class="directory-summary"><p id="testStatus" class="directory-status" role="status" aria-live="polite">Loading current test prices…</p><span class="price-legend">✓ Original rates · Pakistani Rupees (Rs.)</span></div><div class="test-grid" id="testGrid" aria-live="off"></div><p class="directory-empty" id="noTests" hidden>No matching tests found. Try a different search or contact RAYYAN LAB.</p><p class="directory-note">Rates shown are original laboratory prices before any discount. Test availability, sample requirements and final billing should be confirmed with RAYYAN LAB.</p></div></div></section>
 <section class="section soft" id="online-reports"><div class="wrap"><div class="head"><span class="tag">Patient services</span><h2>Online Laboratory Reports</h2><p>View your original approved RAYYAN LAB report.</p></div><div class="card" style="max-width:650px;margin:auto"><div class="symbol" style="margin:auto">📄</div><h3 style="text-align:center">View Your Report</h3><p style="text-align:center">Enter your invoice number and the mobile number registered at RAYYAN LAB.</p><p id="reportUnavailable" role="alert" hidden style="padding:12px;background:#fff0f0;color:#8e2222;border-radius:8px;margin-top:14px">Report unavailable. Please check your details or contact RAYYAN LAB.</p><form method="POST" action="https://rayyan-lab-lims-staging.onrender.com/api/public/report-lookup" autocomplete="off"><label for="onlineInvoice" style="display:block;font-weight:700;margin:14px 0 6px">Invoice Number</label><input id="onlineInvoice" name="invoiceNo" type="text" placeholder="INV-000001" maxlength="60" required style="width:100%;padding:13px;border:1px solid #b7cad7;border-radius:9px;font:inherit"><label for="onlinePhone" style="display:block;font-weight:700;margin:14px 0 6px">Registered Mobile Number</label><input id="onlinePhone" name="phone" type="tel" inputmode="tel" placeholder="03XXXXXXXXX" maxlength="20" required style="width:100%;padding:13px;border:1px solid #b7cad7;border-radius:9px;font:inherit"><button class="btn" type="submit" style="width:100%;margin-top:18px">View Report</button></form><p style="margin-top:14px;text-align:center">Only fully approved reports are available online.</p></div></div></section><section class="section" id="about"><div class="wrap about"><div class="about-panel" aria-hidden="true">✚</div><div><span class="tag">About RAYYAN LAB</span><h2>Careful testing. Clear communication.</h2><p>RAYYAN LAB is a diagnostic laboratory serving patients in Lahore. Our goal is to make laboratory services approachable through helpful information, an organized testing experience and clear reporting.</p><p>For test preparation, sample requirements and reporting times, please contact the laboratory directly.</p><a class="btn" href="#contact">Contact the Lab →</a></div></div></section>
 <section class="section contact-showcase" id="contact"><div class="wrap"><div class="head"><span class="tag">Contact &amp; Visit</span><h2>Get in Touch or <em>Visit RAYYAN LAB</em></h2><p>Contact our team for laboratory test information, or visit us in Lahore. We are here to help.</p></div><div class="contact">
 <article class="contact-card"><div class="contact-title"><span class="contact-icon" aria-hidden="true">☎</span><h3>Contact Us</h3></div><p>Call or WhatsApp for test information and assistance during laboratory hours.</p>
@@ -71,5 +113,62 @@
 <a class="map-link" href="https://maps.app.goo.gl/2wuCAgVM5AeQsqB17" target="_blank" rel="noopener noreferrer" aria-label="Get directions to RAYYAN LAB on Google Maps">📍 Get Directions on Google Maps →</a>
 </article></div></div></section>
 </main><footer class="footer"><div class="wrap"><div><strong>RAYYAN LAB</strong><br><small>Diagnostic Laboratory • Lahore</small></div><small>© <span id="year">2026</span> RAYYAN LAB. All rights reserved.</small></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();const q=document.getElementById('testQuery'),items=[...document.querySelectorAll('#testGrid .test')],empty=document.getElementById('noTests');q.addEventListener('input',()=>{const s=q.value.trim().toLowerCase();let shown=0;for(const item of items){const match=item.dataset.name.includes(s)||item.textContent.toLowerCase().includes(s);item.hidden=!match;if(match)shown++}empty.style.display=shown?'none':'block'});</script>
+<script>
+ // RAYYAN LAB public catalog; patient report form and other sections are unchanged.
+ document.getElementById('year').textContent=new Date().getFullYear();
+ (()=>{
+   const API='https://rayyan-lab-lims-staging.onrender.com/api/public/tests';
+   const input=document.getElementById('testQuery');
+   const department=document.getElementById('departmentFilter');
+   const grid=document.getElementById('testGrid');
+   const status=document.getElementById('testStatus');
+   const empty=document.getElementById('noTests');
+   const money=new Intl.NumberFormat('en-PK',{maximumFractionDigits:2});
+   let tests=[];
+   function el(tag,className,value){const n=document.createElement(tag);if(className)n.className=className;if(value!==undefined)n.textContent=value;return n;}
+   function render(){
+     const term=input.value.trim().toLocaleLowerCase();
+     const dept=department.value;
+     const matched=tests.filter(t=>(!dept||String(t.department||'')===dept)&&[t.name,t.code,t.department,t.category,t.sample].some(v=>String(v||'').toLocaleLowerCase().includes(term)));
+     const frag=document.createDocumentFragment();
+     for(const t of matched){
+       const card=el('article','test');
+       const top=el('div','test-top');
+       top.append(el('span','test-category',t.category||t.department||'Laboratory Test'),el('span','test-code-badge',t.code||''));
+       card.append(top,el('div','test-name',t.name||'Unnamed test'));
+       const detail=[t.department,t.sample].filter(Boolean).join('  •  ');
+       card.append(el('div','test-meta',detail||'RAYYAN LAB diagnostic testing'));
+       const row=el('div','test-price-row');
+       const left=el('div');left.append(el('div','test-price-label','Original Test Price'));
+       const rate=t.rate===null||t.rate===undefined||t.rate===''?NaN:Number(t.rate);
+       const price=el('div','test-price');
+       if(Number.isFinite(rate)&&rate>0){price.append(el('span','currency','Rs. '),document.createTextNode(money.format(rate)));}
+       else{price.classList.add('unavailable');price.textContent='Contact Lab for Price';}
+       left.append(price);row.append(left);card.append(row);frag.append(card);
+     }
+     grid.replaceChildren(frag);
+     empty.hidden=matched.length!==0;
+     status.textContent=tests.length?`${matched.length} of ${tests.length} active tests shown`:'No active tests currently listed.';
+   }
+   input.addEventListener('input',render);
+   department.addEventListener('change',render);
+   async function loadTests(){
+     try{
+       const response=await fetch(API,{method:'GET',mode:'cors',cache:'no-store',headers:{Accept:'application/json'}});
+       if(!response.ok)throw new Error('HTTP '+response.status);
+       const data=await response.json();
+       if(!data||data.ok!==true||!Array.isArray(data.tests))throw new Error('Unexpected response');
+       tests=data.tests.filter(t=>t&&typeof t.name==='string');
+       const departments=[...new Set(tests.map(t=>String(t.department||'').trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+       for(const d of departments){const opt=document.createElement('option');opt.value=d;opt.textContent=d;department.append(opt);}
+       render();
+     }catch(error){
+       status.textContent='Live test prices are temporarily unavailable. Please contact RAYYAN LAB for prices.';
+       grid.replaceChildren();empty.hidden=true;
+       console.warn('Public test directory unavailable:',error.message);
+     }
+   }
+   loadTests();
+ })();
+ </script>
 <script>if(new URLSearchParams(location.search).get("report")==="unavailable")document.getElementById("reportUnavailable").hidden=false;</script></body></html>
